@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+body{
+   min-width:1000px; // suppose you want minimun width of 1000px
+   _width: expression( document.body.clientWidth > 1000 ? "1000px" : "auto" ); 
+}
+#calendar {
+	width: 1366px;
+	height: 768px;
+	display: block;
+	margin: auto;
+}
+.header, .footer {
+    background-color: grey;
+    color: black;
+    padding: 15px;
+}
+.column {
+    float: left;
+    min-width: auto;
+    padding: 15px;
+}
+.menu {
+    width: 10%;
+    display: inline-block;
+}
+.content {
+    padding: 100px;
+    width: 90%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid black;
+    color: black;
+    white-space:nowrap;
+	display: inline-block;
+}
+.menu li:hover {
+    background-color: #ff8100;
+}
